@@ -1,0 +1,13 @@
+#mainhead{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#radio{
+    text-align: left;
+    font-size: xx-large;
+}
+#savebutton{
+    width: 100px;
+    height: 35px;
+}

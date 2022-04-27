@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mic.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <div id="mainhead">Вопрос №38</div>
+</head>
+<body>
+    <div id="radio">
+            <div>Что такое микрофон?</div>
+            <div>
+                <input type="radio" id="radio1" name="answer" value="yes">
+                <label for="radio1">Да</label>
+                <br>
+                <input type="radio" id="radio2" name="answer" value="no">
+                <label for="contactChoice2">Нет</label>
+            </div>
+            <div>
+                <button id="check" type="submit">Сохранить</button>
+            </div>
+    </div>
+    <script>
+        let answ = "0";
+        radio1.onclick = function()
+        {
+            answ = "Yes";
+        }
+        radio2.onclick = function()
+        {
+            answ = "No";
+        }
+        check.onclick = function()
+        {
+            if(answ =="Yes")
+            {
+                window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+            }
+            if(answ =="No")
+            {
+                window.location.replace('https://sun1-87.userapi.com/aSWWQ2ZhWx0Rnj9Oa21GYey851RO-wMvjIr88Q/2k7FvatDHtw.jpg');
+            }
+            if(answ == "0")
+            {
+                alert("Ошибка! Выберите вариант!!!")
+            }
+        }
+    </script>
+</body>
+</html>
